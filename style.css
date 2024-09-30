@@ -65,7 +65,8 @@ body a:hover{ color: royalblue; transition: 0.3s all;} */
 * {
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box;}
+	box-sizing: border-box;
+	scroll-behavior: smooth;}
 body{
 	font-family: "Montserrat", "Cabin", "Gill Sans", sans-serif;
 	display: flex;
@@ -367,8 +368,26 @@ svg {
 	display: inline-block;
 	background: linen;
 	border-radius: calc(0.3vw + 0.3vh);
-	padding: 15px 10px;
+	padding: 15px 10px;}
+#jumpButton{
+	position: sticky;
+	width: 5%;
+	max-width: 5%;
+	height: 50px;
+	background: rgb(213, 62, 79);
+	top: 20vh;
+	margin: 0 1% 0 auto;
+	cursor: pointer;
+	text-align: center;
+	border-radius: calc(0.5vw + 0.5vh);
+	padding: 7px;
+	overflow: hidden;
+	line-height: .9;
+	align-items: center;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 9.6);
 }
+#jumpButton a:visited{
+	color:aliceblue}
 
 #publicationList section{
 	border: #1a5276 5px solid;
@@ -588,7 +607,8 @@ svg {
 	border: 5px seagreen solid;
 	width: 100%;
 	background: inherit;
-	margin-top: 3vh;}
+	margin-top: 3vh;
+	padding: 0 10px;}
 #AndyPhoto{
 	min-width: 215px;
 	max-width: 215px;}
@@ -603,9 +623,7 @@ svg {
 	border: 5px aliceblue solid;}
 #teamList h2{
 	font-size: large;
-	margin-bottom: 0.3rem;
-	margin-left: 1.5rem;
-	text-indent: 1rem;
+	margin: 0 .1rem 0.3rem 15px;
 	text-decoration: underline;}
 #teamList p{
 	font-size: 1.0rem;
@@ -613,7 +631,8 @@ svg {
 	line-height: 1.2rem;
 	overflow: auto;
 	width: 100%;
-	padding-right: 12px;}
+	padding-right: 12px;
+	overflow:hidden}
 
 /* #endregion Team page */
 
