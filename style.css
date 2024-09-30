@@ -384,10 +384,38 @@ svg {
 	overflow: hidden;
 	line-height: .9;
 	align-items: center;
-	box-shadow: 5px 5px 10px rgba(0, 0, 0, 9.6);
-}
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 9.6);}
 #jumpButton a:visited{
 	color:aliceblue}
+
+
+
+
+#myBtn {
+  display:none;
+  position: fixed;
+  top: 30vh;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+  z-index: 10000;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+
+
+
+
 
 #publicationList section{
 	border: #1a5276 5px solid;

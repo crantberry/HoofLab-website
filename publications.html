@@ -43,10 +43,48 @@
 
 
 <div id="jumpButton">
-<a href="#jumpButton" style="text-decoration: none; color: aliceblue;">
+<a href="#publicationList" style="text-decoration: none; color: aliceblue;">
 <span style="font-size: 1.5rem; font-weight: 600;">&#11121;</span> <br> <span style="font-weight: 530;">to top</span>
 </a>
 </div>
+
+
+<button onclick="topFunction()" id="myBtn" title="Jump to top">Top</button>
+
+<script>
+// Get the button
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+
+function scrollFunction() {
+  if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+    mybutton.style.height = "auto";
+    mybutton.style.width = "auto";
+    mybutton.style.display = "flex";
+    mybutton.style.flexDirection = "column";
+    mybutton.style.transition = "all 1s";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+
+
+
+
+
+
+
 
 <main>
 <section id="publicationList">
