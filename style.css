@@ -104,6 +104,7 @@ footer{
 /* #endregion Global Body & Footer stylings */
 
 
+/* #region Nav bar */
 .menuArea{
 	background-color: rgba(51,0,111, 0.7);
 	margin-bottom: 18vh;
@@ -133,7 +134,8 @@ footer{
 	border-radius: calc(.4vw + .4vh);
 	padding: 15px;}
 .menuItem{
-	height: 6vh;}
+	height: 6vh;
+	max-height: 6vh;}
 .menuArea ul{
     list-style: none;
 	display: flex;
@@ -149,29 +151,31 @@ footer{
     display: flex;
     flex-direction: column;
 	width:100%;
-	top: calc(100%)}
+	top: calc(100%);}
 .dropdown li{
     display: none;
+	border-radius: none;
 	height: 6vh;}
 .menuArea li:hover .dropdown li{
     display: flex;
 	flex-direction: column;
 	background-color: rgba(0, 0, 0, 0.5);
+	color: white;
 	width: 100%;}
 .menuItem {
 	margin-left: 1%;
 	margin-right: 1%;}
 .menuArea #logo{
-	margin-right: 23vw}
+	margin-right: 23vw;
+	font: italic 500 2rem/1.1 "IBM Plex Sans";
+	/* text-decoration: underline; */
+	color: aliceblue;}
 #active{
 	background-color: rgba(50, 136, 189, 0.8);
 	height: 100%;}
-
 .menuItem:hover::after {
 	transform: scaleX(1);
-	transform-origin: bottom left;
-}
-
+	transform-origin: bottom left;}
 .menuItem::after{
 	content: '';
 	position: absolute;
@@ -182,63 +186,7 @@ footer{
 	left: 15%;
 	background-color: rgb(213, 62, 79);
 	transform-origin: bottom right;
-	transition: transform 0.25s ease-out;
-}
-
-
-
-/* #region Nav bar */
-/* 
-.menuArea{
-	background-color: rgba(51,0,111, 0.7);
-	margin-bottom: 18vh;
-	width: 100%;
-	z-index: 1000;}
-.menuArea a{
-    display: flex;
-    align-items:center;
-    justify-content:center;
-    color: aliceblue;
-    height: 10vh;
-	font-size: 1.1rem;
-    text-decoration: none;}
-.menuArea li a:hover{
-	background-color: rgb(253, 174, 97);
-	transition:0.4s;}
-.menuItem:hover{
-	font-weight: 550;}
-.menuArea li{
-    justify-content:center;}
-.menuArea li a{
-	border-radius: calc(.4vw + .4vh);}
-.menuArea ul{
-    list-style: none;
-    display: flex;}
-.menuArea ul li{
-    position: relative;
-    width: 100%;
-    text-align: center;
-	border-radius: calc(.4vw + .4vh);}
-.menuArea li:hover .dropdown li{
-    top: 0;
-    display: flex;
-	flex-direction: column;
-	background-color: rgba(0, 0, 0, 0.5);}
-.dropdown li{
-    display: none;
-    position: relative;}
-.dropdown{
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-	width:100%;}
-.menuItem {
-	margin-left: 1%;
-	margin-right: 1%;}
-.menuArea #logo{
-	margin-right: 18vw}
-#active{
-	background-color: rgba(50, 136, 189, 0.8);} */
+	transition: transform 0.25s ease-out;}
 
 /* #endregion Nav bar */
 
@@ -248,8 +196,8 @@ footer{
 	width: 400px;
 	height: 400px;
 	position: absolute;
-	left: 20%;
-	top: 75%;
+	left: 40%;
+	top: 87%;
 	margin-right: 4%;
 	transform: translate(-50%, -50%);
 	display: flex;
@@ -369,53 +317,24 @@ svg {
 	background: linen;
 	border-radius: calc(0.3vw + 0.3vh);
 	padding: 15px 10px;}
-#jumpButton{
+
+#jumpButton {
+	display:none;
 	position: sticky;
-	width: 5%;
-	max-width: 5%;
-	height: 50px;
-	background: rgb(213, 62, 79);
 	top: 20vh;
-	margin: 0 1% 0 auto;
+	margin: 0 1% 0 94%;
+	width: 5%;
+	height: 1vh;
+	border: none;
+	font-size: 1.3rem;
+	font-weight: 545;
+	line-height: 0.9;
+	background-color: rgb(213, 62, 79);
+	color: aliceblue;
 	cursor: pointer;
-	text-align: center;
-	border-radius: calc(0.5vw + 0.5vh);
 	padding: 7px;
-	overflow: hidden;
-	line-height: .9;
-	align-items: center;
+	border-radius: 9px;
 	box-shadow: 5px 5px 10px rgba(0, 0, 0, 9.6);}
-#jumpButton a:visited{
-	color:aliceblue}
-
-
-
-
-#myBtn {
-  display:none;
-  position: fixed;
-  top: 30vh;
-  right: 30px;
-  z-index: 99;
-  font-size: 18px;
-  border: none;
-  outline: none;
-  background-color: red;
-  color: white;
-  cursor: pointer;
-  padding: 15px;
-  border-radius: 4px;
-  z-index: 10000;
-}
-
-#myBtn:hover {
-  background-color: #555;
-}
-
-
-
-
-
 
 #publicationList section{
 	border: #1a5276 5px solid;
@@ -682,7 +601,8 @@ svg {
 	padding: 5%;
 	margin: 3%;
 	line-height: 1.7rem;}
-#maps a:hover{color:#669cce}
+#maps a{color:rgb(75, 160, 245)}
+#maps a:hover{color:rgb(114, 175, 236)}
 
 /* #endregion Contact page */
 

@@ -11,6 +11,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 </head>
 
 <body id="publicationsPage">
@@ -18,7 +21,7 @@
 <header>
     <nav class="menuArea">
         <ul>
-            <a href="index.html" id="logo" ><img src="images/Hoofnagle final logo_V2.tif" height="100%" class="image" alt="Hooflab Logo"></a>
+            <a href="index.html" id="logo" ><img src="images/HooflabLogo_final.png" height="100%" class="image" alt="Lab Logo">Hoofnagle Lab</a>
             <li class="menuItem"><a href="index.html">Home</a></li>
             <li class="menuItem" id="active"><a href="publications.html">Publications</a></li>
             <li class="menuItem"><a href="#">Research</a>
@@ -42,39 +45,34 @@
 <h1 style="color:aliceblue; font-size: 1.6rem; margin-left: 20vw; text-decoration: none; margin-bottom: 30px;">&#x21B3; Jump to: <a href="#collabPubs">Collaborator publications</a></h1>
 
 
-<div id="jumpButton">
-<a href="#publicationList" style="text-decoration: none; color: aliceblue;">
-<span style="font-size: 1.5rem; font-weight: 600;">&#11121;</span> <br> <span style="font-weight: 530;">to top</span>
-</a>
-</div>
-
-
-<button onclick="topFunction()" id="myBtn" title="Jump to top">Top</button>
+<button onclick="topFunction()" id="jumpButton" title="Jump to top">
+    <span style="font-size: 1.5rem; font-weight: 6000;">&#11121;</span> <br> <span>to top</span>
+</button>
 
 <script>
 // Get the button
-let mybutton = document.getElementById("myBtn");
+let mybutton = document.getElementById("jumpButton");
 
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
 
 
 function scrollFunction() {
-  if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+    if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
     mybutton.style.height = "auto";
     mybutton.style.width = "auto";
     mybutton.style.display = "flex";
     mybutton.style.flexDirection = "column";
     mybutton.style.transition = "all 1s";
-  } else {
+    } else {
     mybutton.style.display = "none";
-  }
+    }
 }
 
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
 }
 </script>
 
