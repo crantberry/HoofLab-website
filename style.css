@@ -134,7 +134,7 @@ footer{
 	border-radius: calc(.4vw + .4vh);
 	padding: 15px;}
 .menuItem{
-	height: 6vh;
+	/* height: 100%; */
 	max-height: 6vh;}
 .menuArea ul{
     list-style: none;
@@ -155,7 +155,7 @@ footer{
 .dropdown li{
     display: none;
 	border-radius: none;
-	height: 6vh;}
+	height: 100%;}
 .menuArea li:hover .dropdown li{
     display: flex;
 	flex-direction: column;
@@ -167,12 +167,14 @@ footer{
 	margin-right: 1%;}
 .menuArea #logo{
 	margin-right: 23vw;
+	margin-left: 2vw;
 	font: italic 500 2rem/1.1 "IBM Plex Sans";
 	/* text-decoration: underline; */
 	color: aliceblue;}
 #active{
 	background-color: rgba(50, 136, 189, 0.8);
-	height: 100%;}
+	height: 100%;
+}
 .menuItem:hover::after {
 	transform: scaleX(1);
 	transform-origin: bottom left;}
@@ -184,7 +186,7 @@ footer{
 	height: 3px;
 	bottom: 1vh;
 	left: 15%;
-	background-color: rgb(213, 62, 79);
+	background-color: #CC9933;
 	transform-origin: bottom right;
 	transition: transform 0.25s ease-out;}
 
@@ -196,8 +198,8 @@ footer{
 	width: 400px;
 	height: 400px;
 	position: absolute;
-	left: 40%;
-	top: 87%;
+	left: 70%;
+	top: 80%;
 	margin-right: 4%;
 	transform: translate(-50%, -50%);
 	display: flex;
