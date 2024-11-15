@@ -124,7 +124,7 @@ footer{
 	background-color: rgb(102, 194, 165);
 	transition:0.4s;
 	width: 100%;
-	height: 100%;
+	max-height: 6vh;
 	font-weight: 650;}
 .menuArea li{
     display: flex;
@@ -168,7 +168,7 @@ footer{
 .menuArea #logo{
 	margin-right: 23vw;
 	margin-left: 2vw;
-	font: italic 500 2rem/1.1 "IBM Plex Sans";
+	font: italic 500 2rem/1 "IBM Plex Sans";
 	/* text-decoration: underline; */
 	color: aliceblue;}
 #active{
@@ -184,7 +184,7 @@ footer{
 	width: 70%;
 	transform: scaleX(0);
 	height: 3px;
-	bottom: 1vh;
+	bottom: 15%;
 	left: 15%;
 	background-color: #CC9933;
 	transform-origin: bottom right;
@@ -323,6 +323,7 @@ svg {
 #jumpButton {
 	display:none;
 	position: sticky;
+	text-align: center;
 	top: 20vh;
 	margin: 0 1% 0 94%;
 	width: 5%;
@@ -416,7 +417,7 @@ svg {
 	border-radius: calc(0.3vw + 0.3vh);
 }
 #partnersList p{
-	text-indent: 1.5rem;
+	margin-left: 10px;
 	font-size: 1.1rem;
 	position: relative;
 	margin-bottom: 5vh;
@@ -444,7 +445,7 @@ svg {
 #partnersList h2{
 	font-size: 1.6rem;
 	padding-bottom: 5px;
-	margin: 10px 5px 0 1vw;
+	margin: 10px 5px 0 10px;
 	line-height: 2rem;
 }
 
@@ -486,13 +487,13 @@ svg {
 #projectsList h2{
 	font-size: 1.6rem;
 	padding-bottom: 5px;
-	margin: 10px 0 0 1vw;
+	margin: 10px 0 0 10px;
 	line-height: 2rem;
 }
 
 #projectsList p{
 	/* border-bottom: 3px seagreen solid; */
-	text-indent: 1.5rem;
+	margin-left: 10px;
 	padding-bottom: 10px;
 	font-size: 1.1rem;
 	position: relative;
